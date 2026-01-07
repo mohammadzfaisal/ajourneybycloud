@@ -1,0 +1,62 @@
+name: "L2C Topic"
+description: Track one Learn to Cloud topic (study + hands-on + evidence)
+title: "P?-T?: <Topic Name>"
+labels: ["study"]
+body:
+  - type: input
+    id: phase
+    attributes:
+      label: Phase (0-5)
+      placeholder: "e.g., 2"
+    validations:
+      required: true
+
+  - type: input
+    id: topic_url
+    attributes:
+      label: Learn to Cloud URL
+      placeholder: "https://learntocloud.guide/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Outcomes (what I should be able to do)
+      description: Write 3–7 bullets.
+      placeholder: |
+        - I can explain ...
+        - I can implement ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: study_notes
+    attributes:
+      label: Study notes (key concepts)
+      placeholder: |
+        - Concept 1:
+        - Concept 2:
+
+  - type: textarea
+    id: hands_on
+    attributes:
+      label: Hands-on tasks
+      placeholder: |
+        - [ ] Task 1
+        - [ ] Task 2
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (links)
+      description: Screenshots, repos, logs, diagrams, deployed URLs.
+      placeholder: |
+        - Repo:
+        - Screenshot:
+        - Deployment URL:
+
+  - type: textarea
+    id: reflection
+    attributes:
+      label: Reflection (what was hard, what I’d do differently)
